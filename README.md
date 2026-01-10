@@ -1,31 +1,34 @@
-# Fine-tuning Phi-2 for Text Summarization (XSum)
+# finetuning-phi-2-text-summarization
 
-## Overview
-This repository fine-tunes a decoder-only LLM (Phi-2) for abstractive summarization using XSum.
-Training uses parameter-efficient fine-tuning (LoRA) with 4-bit quantization to fit in Colab T4.
+## Tujuan
+Repository ini dibuat untuk memenuhi UAS (Finalterm) mata kuliah Deep Learning: fine-tuning model HuggingFace Transformers end-to-end.
 
-## Dataset
-- EdinburghNLP/xsum (HuggingFace Datasets)
+> **Catatan integritas akademik:** gunakan repo ini sebagai *template/rujukan*. Kamu tetap perlu menjalankan eksperimen sendiri, mengisi identitas, menuliskan analisis, dan menyertakan hasil evaluasi yang kamu peroleh.
 
-## Model
-- microsoft/phi-2
-- PEFT: LoRA (4-bit)
+## Ringkasan Proyek
+- Dataset: XSum (HuggingFace datasets: xsum)
+- Model: Phi-2 (decoder-only LLM)
+- Task NLP: Abstractive text summarization
+- Metrik utama: ROUGE-1/2/L (opsional: ROUGE-Lsum)
 
-## Repository Structure
-- notebooks/
-- reports/
-- requirements.txt
+## Struktur Folder
+- `notebooks/` : notebook eksperimen (preprocess → training → evaluasi)
+- `reports/` : ringkasan hasil (tabel metrik, screenshot/plot, catatan analisis)
+- `requirements.txt` : dependensi minimal
 
-## Notebooks
-1. notebooks/01_prepare_xsum.ipynb
-2. notebooks/02_finetune_phi2_lora.ipynb
-3. notebooks/03_evaluate_rouge.ipynb
+## Cara Menjalankan
+1. Buat environment (conda/venv)
+2. Install dependensi:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Jalankan notebook di `notebooks/` secara berurutan.
 
-## Results (fill after running)
-| Model | Epochs | ROUGE-1 | ROUGE-2 | ROUGE-L |
-|------|--------|---------|---------|---------|
-| phi-2 (LoRA 4-bit) |  |  |  |  |
+## Hasil & Analisis
+> **TODO:** isi metrik (train/valid/test), analisis error, serta perbandingan konfigurasi (misalnya model berbeda / hyperparameter berbeda).
 
-## Identification
-- ANOM NUR MAULID - 1103223193 - TK4601
-- DARRELL CHESTA ADABI - 1103223128 - TK4601
+## Identitas
+- Nama:
+- Kelas:
+- NIM:
+- Kelompok:
